@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de Pourboire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Calculateur de Pourboire</h2>
+
+<form>
+    <label>Montant de l'addition (DH) :</label>
+    <input type="number" id="montant">
+    <p id="error-montant" class="error"></p>
+
+    <label>Nombre de personnes :</label>
+    <input type="number" id="personnes">
+    <p id="error-personnes" class="error"></p>
+
+    <p>Choisissez un pourcentage :</p>
+    <button type="button" onclick="calculerPourboire5()">5%</button>
+    <button type="button" onclick="calculerPourboire10()">10%</button>
+    <button type="button" onclick="calculerPourboire15()">15%</button>
+    <button type="button" onclick="calculerPourboire25()">25%</button>
+    <button type="button" onclick="calculerPourboire50()">50%</button>
+</form>
+
+
+<div>
+    <p id="resultat-total"></p>
+    <p id="resultat-par-personne"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
